@@ -1,2 +1,9 @@
 ﻿  DerCPPP.cpp
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(396): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(404): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(416): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(424): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(437): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(446): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\dercppp.cpp(474): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
   ConsoleApplication1.vcxproj -> C:\Users\marti\source\repos\DerCPP-Programmierer\ConsoleApplication1\Debug\ConsoleApplication1.exe
