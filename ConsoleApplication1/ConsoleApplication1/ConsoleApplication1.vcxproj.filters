@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\Header">
+      <UniqueIdentifier>{b4cf8264-0d62-42ee-bac1-ba0dffdecc44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\cppdatei">
+      <UniqueIdentifier>{64c26947-7ffa-4729-8348-da5ea00b402f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Templates">
+      <UniqueIdentifier>{a95007af-5863-43df-803b-dd8af88d26bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Kapitel 3">
+      <UniqueIdentifier>{37afdb80-854f-4208-a71b-250238c8a168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Kapitel 3\Header">
+      <UniqueIdentifier>{dc7bc2cd-97d8-43a1-adb1-c9ea2867b4b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,13 +36,71 @@
     <ClInclude Include="targetver.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ausdruck.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="summand.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="faktor.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="zahl.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>Quelldateien\Kapitel 3\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Rational.h">
+      <Filter>Quelldateien\Kapitel 3\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="DerCPPP.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="Taschenrechner.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
     </ClCompile>
+    <ClCompile Include="Ausdruck.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="summand.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="faktor.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="zahl.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="Kapitel 1.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="Kapitel 2.cpp">
+      <Filter>Quelldateien\cppdatei</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Quelldateien\Kapitel 3</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien\Kapitel 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Rational.cpp">
+      <Filter>Quelldateien\Kapitel 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ConsoleApplication1.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gettype.cpp">
+      <Filter>Quelldateien\Templates</Filter>
+    </None>
   </ItemGroup>
 </Project>
