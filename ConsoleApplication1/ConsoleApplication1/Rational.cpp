@@ -12,7 +12,7 @@
 */
 
 
-Rational::Rational(const long a,const long b) {
+Rational::Rational(const long& a,const long& b) {
 	
 	if (b == 0)
 	{
@@ -24,11 +24,13 @@ Rational::Rational(const long a,const long b) {
 	Rational::n = b;
 }
 
-
-Rational::Rational(const   long a) {
+/*
+Rational::Rational(const long& a) {
 	Rational::z = a;
 	Rational::n = 1;
 }
+*/
+
 
 /*
 	Setter and Getter of Rational
@@ -100,6 +102,11 @@ long Rational::ggt(long x, long y) {
 }
 
 
+/*
+Funktionen auserhalb der Klasse Rational
+
+*/
+
 void eingabe(Rational& eingabe) {
 	long tmpz, tmpn;
 	
@@ -114,3 +121,26 @@ void eingabe(Rational& eingabe) {
 void ausgabe(Rational& ausgabe) {
 	std::cout << "\n " << ausgabe.getZaehler() << "/" << ausgabe.getNenner();
 }
+
+
+Rational add(Rational a, Rational b) {
+	a.add(b);
+	return a;
+}
+
+Rational sub(Rational a, Rational b) {
+	a.sub(b);
+	return a;
+}
+
+Rational mult(Rational a, Rational b) {
+	a.mult(b);
+	return a;
+}
+
+Rational div(Rational a, Rational b) {
+	a.div(b);
+	return a;
+}
+
+

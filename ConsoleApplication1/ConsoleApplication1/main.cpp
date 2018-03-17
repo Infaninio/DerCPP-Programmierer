@@ -1,12 +1,13 @@
 #include"stdafx.h"
 #include"person.h"
 #include"Rational.h"
+#include"IntMenge.h"
 #include<iostream>
 
 
 
 void main() {
-
+	int test;
 	/*
 	Übung 3.1
 	Erstellen der Ersten Klasse Person inkl. verschiedener Methoden und Attributen
@@ -44,7 +45,9 @@ void main() {
 	Übung 3.2
 
 	*/
-
+	
+	
+	/*
 	Rational b1(3, 5);
 	Rational b2(4);
 	Rational b3(3, 0);
@@ -54,12 +57,39 @@ void main() {
 	eingabe(b3);
 
 	b2.div(b3);
-	//b2 = mult(b1, 5);
+	b2 = mult(b1, b3);
+	b2 = add(b1, 5);
 
 	ausgabe(b2);
 	ausgabe(b1);
 	ausgabe(b3);
 
-	int test;
+	
+	std::cin >> test;
+
+	*/
+
+	/*
+	Übung 3.3
+	
+	*/
+
+	IntMenge menge;
+
+	menge.hinzufuegen(2);
+	menge.hinzufuegen(-9);
+	menge.hinzufuegen(2);
+	menge.entfernen(99);
+	menge.entfernen(-9);
+	menge.anzeigen();
+	menge.loeschen();
+	for (int i = 17; i < 33; i++) {
+		menge.hinzufuegen(i*i);
+	}
+
+	std::cout << "Anzahl = " << menge.size() << " Minimum = " << menge.getMin();
+
+
+
 	std::cin >> test;
 }

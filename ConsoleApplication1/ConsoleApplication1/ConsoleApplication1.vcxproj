@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="ausdruck.h" />
     <ClInclude Include="faktor.h" />
+    <ClInclude Include="IntMenge.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="Rational.h" />
     <ClInclude Include="summand.h" />
@@ -159,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="faktor.cpp" />
+    <ClCompile Include="IntMenge.cpp" />
     <ClCompile Include="Kapitel 1.cpp" />
     <ClCompile Include="Ausdruck.cpp" />
     <ClCompile Include="Kapitel 2.cpp" />

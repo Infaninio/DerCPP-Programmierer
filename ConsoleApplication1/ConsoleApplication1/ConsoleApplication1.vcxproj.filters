@@ -28,6 +28,9 @@
     <Filter Include="Quelldateien\Kapitel 3\Header">
       <UniqueIdentifier>{dc7bc2cd-97d8-43a1-adb1-c9ea2867b4b2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Quelldateien\Kapitel 3\CPP-Datei">
+      <UniqueIdentifier>{435540b8-7556-4d92-86d2-58fe23a1d118}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -57,6 +60,9 @@
     <ClInclude Include="Rational.h">
       <Filter>Quelldateien\Kapitel 3\Header</Filter>
     </ClInclude>
+    <ClInclude Include="IntMenge.h">
+      <Filter>Quelldateien\Kapitel 3\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -83,14 +89,17 @@
     <ClCompile Include="Kapitel 2.cpp">
       <Filter>Quelldateien\cppdatei</Filter>
     </ClCompile>
-    <ClCompile Include="person.cpp">
-      <Filter>Quelldateien\Kapitel 3</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien\Kapitel 3</Filter>
     </ClCompile>
     <ClCompile Include="Rational.cpp">
-      <Filter>Quelldateien\Kapitel 3</Filter>
+      <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
+    </ClCompile>
+    <ClCompile Include="IntMenge.cpp">
+      <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

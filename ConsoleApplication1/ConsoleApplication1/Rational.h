@@ -8,8 +8,8 @@
 class Rational
 {
 public:
-	Rational(const long);
-	Rational(const long, const long);
+	//Rational(const long&);
+	Rational(const long&, const long& b = 1);
 
 	void add(Rational);
 	void sub(Rational);
