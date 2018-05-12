@@ -19,13 +19,12 @@ class Person
 {
 public:
 	Person();
-	Person(const std::string& Name, const unsigned int& Alter, const Geschlecht Geschlecht);
+	Person(const std::string& Name, const std::string& Personalnummer, const Geschlecht Geschlecht);
 	//~Person();
 
 	std::string getName();
-	unsigned int getAlter();
+	std::string getPersonalnummer();
 	void setName(const std::string& neuerName);
-	void setAlter(const unsigned int neuesAlter);
 
 	bool istFrau();
 	bool istMann();
@@ -33,7 +32,7 @@ public:
 
 private:
 	std::string Name;
-	unsigned int Alter;
+	std::string Personalnummer;
 	Geschlecht Geschlecht;
 
 

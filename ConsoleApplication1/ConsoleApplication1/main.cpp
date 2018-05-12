@@ -2,10 +2,12 @@
 #include"person.h"
 #include"Rational.h"
 #include"IntMenge.h"
+#include"Taschenrechner2_0.h"
 #include<iostream>
+#include"personalverwaltung.h"
 
 
-
+/*
 void main() {
 	int test;
 	/*
@@ -73,7 +75,7 @@ void main() {
 	Übung 3.3
 	
 	*/
-
+	/*
 	IntMenge menge;
 
 	menge.hinzufuegen(2);
@@ -92,4 +94,28 @@ void main() {
 
 
 	std::cin >> test;
+
+	*/
+
+	/*
+		Übung 3.5
+	*/
+
+	/*
+	Personalverwaltung personalverwaltung("PVDaten.txt");
+
+	personalverwaltung.ausgeben();
+	personalverwaltung.dialog();
+
+	*/
+/*
+	Taschenrechner t1 = Taschenrechner("5+5");
+	t1.newString("(5-3)*25-19/7");
+	
+	
+	
+	
+	std::cin >> test;
 }
+
+*/

@@ -4,36 +4,29 @@
 
 
 Person::Person() {
-	Person::Alter = 0;
+	Person::Personalnummer = "0";
 	Person::Name = "kein Name eingetragen";
 }
 
 
-Person::Person(const std::string& Name, const unsigned int& Alter, const enum class Geschlecht Geschlecht) {
+Person::Person(const std::string& Name, const std::string& Personalnummer, const enum class Geschlecht Geschlecht) {
 	Person::Name = Name;
-	Person::Alter = Alter;
+	Person::Personalnummer = Personalnummer;
 	Person::Geschlecht = Geschlecht;
 }
 
 
 
 
-unsigned int Person::getAlter() {
-	return Person::Alter;
+std::string Person::getPersonalnummer() {
+	return Person::Personalnummer;
 }
 
 std::string Person::getName() {
 	return Person::Name;
 }
 
-void Person::setAlter(const unsigned int neuesAlter) {
-	
-	if (neuesAlter <= 120)
-		Person::Alter = neuesAlter;
-	else
-		std::cout << "\nPersonen können derzeit max 120 Jahre alt werden";
 
-}
 
 void Person::setName(const std::string& neuerName) {
 	if (!neuerName.empty())

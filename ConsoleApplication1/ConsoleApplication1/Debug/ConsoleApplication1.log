@@ -1,3 +1,7 @@
-﻿  main.cpp
-c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main.cpp(9): warning C4326: Der Rückgabetyp von "main" sollte "int" und nicht "void" sein
+﻿  main4.cpp
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main4.cpp(45): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main4.cpp(69): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main4.cpp(70): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main4.cpp(108): warning C4326: Der Rückgabetyp von "main" sollte "int" und nicht "void" sein
+c:\users\marti\source\repos\dercpp-programmierer\consoleapplication1\consoleapplication1\main4.cpp(112): warning C4101: "test2": Unreferenzierte lokale Variable
   ConsoleApplication1.vcxproj -> C:\Users\marti\source\repos\DerCPP-Programmierer\ConsoleApplication1\Debug\ConsoleApplication1.exe

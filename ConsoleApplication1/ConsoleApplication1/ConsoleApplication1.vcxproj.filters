@@ -31,6 +31,15 @@
     <Filter Include="Quelldateien\Kapitel 3\CPP-Datei">
       <UniqueIdentifier>{435540b8-7556-4d92-86d2-58fe23a1d118}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Quelldateien\Kapitel 4">
+      <UniqueIdentifier>{33e804fc-c6f8-4e2b-9126-b4af846db944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Kapitel 4\Header">
+      <UniqueIdentifier>{268fd44f-ccbf-499f-b1a0-6be5234286a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Kapitel 4\src">
+      <UniqueIdentifier>{7c144be3-cac1-4843-89c8-f82d4ab2781f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -61,6 +70,12 @@
       <Filter>Quelldateien\Kapitel 3\Header</Filter>
     </ClInclude>
     <ClInclude Include="IntMenge.h">
+      <Filter>Quelldateien\Kapitel 3\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="personalverwaltung.h">
+      <Filter>Quelldateien\Kapitel 3\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Taschenrechner2_0.h">
       <Filter>Quelldateien\Kapitel 3\Header</Filter>
     </ClInclude>
   </ItemGroup>
@@ -100,6 +115,24 @@
     </ClCompile>
     <ClCompile Include="IntMenge.cpp">
       <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
+    </ClCompile>
+    <ClCompile Include="personalverwaltung.cpp">
+      <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
+    </ClCompile>
+    <ClCompile Include="Taschenrechner2_0.cpp">
+      <Filter>Quelldateien\Kapitel 3\CPP-Datei</Filter>
+    </ClCompile>
+    <ClCompile Include="4_3.cpp">
+      <Filter>Quelldateien\Kapitel 4\src</Filter>
+    </ClCompile>
+    <ClCompile Include="4_1-2.cpp">
+      <Filter>Quelldateien\Kapitel 4\src</Filter>
+    </ClCompile>
+    <ClCompile Include="main4.cpp">
+      <Filter>Quelldateien\Kapitel 4\src</Filter>
+    </ClCompile>
+    <ClCompile Include="binINOUT.cpp">
+      <Filter>Quelldateien\Kapitel 4\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
