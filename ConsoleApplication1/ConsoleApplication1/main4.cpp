@@ -1,8 +1,10 @@
 #include"stdafx.h"
-#include<iostream>
 #include<cstdlib>
-#include<cstring>
+#include<string>
 #include<time.h>
+#include<iostream>
+#include<iostream>
+#include<fstream>
 
 /*
 Aufgabe 4.5
@@ -88,37 +90,149 @@ Aufgabe 4.7
 
 
 */
+int stringcomp(const void *a, const void *b) {
+	const char* str1 = *static_cast<const char* const*>(a);
+	const char* str2 = *static_cast<const char* const*>(b);
+	
+	return strcmp(str1, str2);
+}
+void stringsort(const char *feld[], size_t number) {
 
-int stringcomp(char* str1, char* str2) {
-	return std::strcmp(str1, str2);
+
+	std::qsort(feld, number, sizeof(char*),stringcomp);
 }
 
-/*
-void stringsort(char* feld[]) {
-	int(*vergleich)(char*, char*);
-	vergleich = stringcomp;
-
-	std::qsort(feld, sizeof(feld), sizeof(feld[0]),stringcomp);
-}
-
-*/
 
 
-
-void main() {
+//Aufgabe 4.8
+void leerzeichenentfernen(char* s) {
+	int i = 0;
 	int x = 0;
-	while (true) {
-		char test1[] = "Ich bin ein ziemlich kurzer Test";
-		char* test2;
+	while (s[i] != '\0')
+	{
+		if (s[i] == ' ') {
+			while (s[x] != '\0')
+			{
+				s[x] = s[x + 1];
+				x++;
+			}
+			i--;
+		}
 
-		//test2 = strduplicat(test1);
-
-		//std::cout << test1 << "\n" << test2;
-
-		winkelgenerator();
-		x++;
-		//std::cin >> x;
-
-
+		i++;
+		x = i;
 	}
 }
+
+
+//Aufgabe 4.9
+void printfile(char* name) {
+	std::ifstream datei(name);
+	std::string line;
+
+
+	if (!datei.good()) {
+		std::printf("Datei %s kann nicht geoeffnet werden\n", name);
+		return;
+	}
+
+	while (!datei.eof())
+	{
+		std::getline(datei, line);
+		std::cout << "" << line << "\n";
+		std::printf("\n");
+	}
+	datei.close();
+
+}
+
+
+bool istbuchstabe(char bst) {
+	
+	if ((bst >= 'A' && bst <= 'Z') || (bst >= 'a' && bst <= 'z')) {
+		return true;
+	}
+	return false;
+}
+
+bool istZahl(char bst) {
+	if ((bst >= '0' && bst <= '9') || '_' == bst)
+	{
+		return true;
+	}
+	return false;
+}
+
+//Aufgabe 4.10
+void readnames(char* fname) {
+	std::ifstream datei(fname);
+
+	if (!datei.good()) {
+		std::cout << "die datei" << fname << "kann nicht gelesen werden\n";
+		return;
+	}
+
+	bool bname = false;
+	while (!datei.eof())
+	{
+		char c;
+		datei.get(c);
+		
+
+		if (istbuchstabe(c))
+		{
+			bname = true;
+			std::cout << c;
+		}
+		else if (istZahl(c) && bname)
+		{
+			std::cout << c;
+		}
+		else
+		{
+			bname = false;
+			std::cout << "\n";
+		}
+	}
+}
+
+void main(int argc, char* argv[]) {
+	int x;
+	/*Aufgabe 4.7
+	const char *sfeld[] = { "eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn" };
+	size_t anzahl  = sizeof(sfeld) / sizeof(sfeld[0]);
+	stringsort(sfeld, anzahl);
+	for (size_t i = 0; i < std::size(sfeld); i++)
+	{
+		std::cout << sfeld[i] << "\n";
+	}
+
+	*/
+	/*Aufgabe 4.8
+	char test[] = "aa    bbb ccccc dd  f";
+	leerzeichenentfernen(test);
+	std::cout << test;
+
+	*/
+
+	/*
+	Aufgabe 4.9
+	
+	for (size_t i = 0; i < argc-1; i++)
+	{
+		printfile(argv[i+1]);
+	}
+	*/
+
+	/*
+	Aufgabe 4.10
+
+	for (size_t i = 0; i < argc-1; i++)
+	{
+		readnames(argv[i + 1]);
+	}
+	*/
+
+	std::cin >> x;
+}
+
