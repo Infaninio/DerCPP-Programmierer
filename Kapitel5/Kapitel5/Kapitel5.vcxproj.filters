@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Quelldateien\Header">
+      <UniqueIdentifier>{1158600f-8cfa-43ca-84f1-0708bb4ae5b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\src">
+      <UniqueIdentifier>{9e6e8958-f24c-4cbe-88be-99995b62ae8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -21,13 +27,31 @@
     <ClInclude Include="targetver.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="MeinString.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="format.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="teilnehmer.h">
+      <Filter>Quelldateien\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="Kapitel5.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MeinString.cpp">
+      <Filter>Quelldateien\src</Filter>
+    </ClCompile>
+    <ClCompile Include="format.cpp">
+      <Filter>Quelldateien\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Teilnehmer.cpp">
+      <Filter>Quelldateien\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
