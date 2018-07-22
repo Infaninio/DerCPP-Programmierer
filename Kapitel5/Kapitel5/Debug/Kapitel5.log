@@ -1,2 +1,2 @@
 ﻿  Teilnehmer.cpp
-c:\users\marti\source\repos\dercpp-programmierer\kapitel5\kapitel5\teilnehmer.cpp(1): fatal error C1010: Unerwartetes Dateiende während der Suche nach dem vorkompilierten Header. Haben Sie möglicherweise vergessen, im Quellcode "#include "stdafx.h"" einzufügen?
+  Kapitel5.vcxproj -> C:\Users\marti\source\repos\DerCPP-Programmierer\Kapitel5\Debug\Kapitel5.exe
